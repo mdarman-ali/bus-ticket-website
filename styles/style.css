@@ -221,7 +221,7 @@ header{
 .phone-number-group {
     flex: 1;
     align-items: flex-start;
-    padding: 20px 0;
+    padding: 40px 0;
     gap: 24px;
     min-width: 525px;
 }

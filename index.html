@@ -85,24 +85,26 @@
         </div>
 
         <div class="gap-4 lg:flex lg:flex-row justify-center">
-            <div class="offer-new-sixteen lg:flex lg:flex-row gap-20 justify-between p-10 rounded-2xl">
-                <div class="fifteen-off">
+            <div class="offer-new-sixteen lg:flex lg:flex-row gap-20 justify-between pr-10 pl-10 rounded-2xl">
+                <div class="fifteen-off pt-10">
                     <h3 class="font-black">15% OFF</h3>
                     <p class="fifteen-off-p font-semibold text-xl">on your next purchase</p>
                     <p class="fifteen-off-p2 font-medium text-lg">use by January 2024</p>
                 </div>
-                <div class="new-fifteen mt-4">
+                <div><img src="./images/cupon-devider.png" alt=""></div>
+                <div class="new-fifteen mt-4 pt-10">
                     <h3 class="font-bold">NEW15</h3>
                     <p class="fifteen-off-p2 font-medium text-xl">Coupon Code</p>
                 </div>
             </div>
-            <div class="offer-new-sixteen2 lg:flex lg:flex-row gap-20 justify-between p-10 rounded-2xl">
-                <div class="fifteen-off">
+            <div class="offer-new-sixteen2 lg:flex lg:flex-row gap-20 justify-between pr-10 pl-10 rounded-2xl">
+                <div class="fifteen-off pt-10">
                     <h3 class="font-black">20% OFF</h3>
                     <p class="fifteen-off-p font-semibold text-xl">on your next purchase</p>
                     <p class="fifteen-off-p2 font-medium text-lg">use by January 2024</p>
                 </div>
-                <div class="new-fifteen mt-4">
+                <div><img src="./images/cupon-devider.png" alt=""></div>
+                <div class="new-fifteen mt-4 pt-10">
                     <h3 class="font-bold">Couple 20</h3>
                     <p class="fifteen-off-p2 font-medium text-xl">Coupon Code</p>
                 </div>
@@ -125,9 +127,9 @@
 
 
             <div class="bg-[#ffffff] rounded-3xl ml-10 mr-10">
-                <div class="flex p-12 gap-24">
+                <div class="flex pl-12 pr-12 gap-10">
                     <div class="phone-number-group ">
-                        <div class="select-your-seat p-9">
+                        <div class="select-your-seat pl-9 pr-9">
                           <div class="c-class-frames">
                             <img
                               class="bus-logo-icon"
@@ -186,7 +188,13 @@
                           </div>
                         </div>
                     </div>
-                    <div class="lacks-tickets pr-7">
+                    <div class="lacks-tickets">
+                      <img
+                        class="info-devider-icon"
+                        loading="eager"
+                        alt=""
+                        src="./images/info-devider.png"
+                      />
                         <div class="all-offers-btn">
                           <img
                             class="fare-icon"
@@ -210,23 +218,66 @@
 
 
 
-            <div>
-              <div class="">
-                <h3 class="Select-Your-Seat font-semibold text-2xl">Select Your Seat</h3>
-                <div class="dashed"></div>
-                <div class="flex justify-between">
-                  <div class="flex gap-x-2 ">
-                    <img src="./images/seat-gray.png" alt="">
-                    <p class="font-medium text-lg inter-font">Available</p>
+            <div class="flex gap-x-10 w-full p-16">
+              <div class="w-1/2">
+                <div class="">
+                  <h3 class="Select-Your-Seat font-semibold text-2xl">Select Your Seat</h3>
+                  <div class="dashed"></div>
+                  <div class="flex justify-between">
+                    <div class="flex gap-x-2 ">
+                      <img src="./images/seat-gray.png" alt="">
+                      <p class="font-medium text-lg inter-font">Available</p>
+                    </div>
+                    <div class="flex gap-x-2">
+                      <img src="./images/seat-green-filled.png" alt="">
+                      <p class="font-medium text-lg inter-font">Selected</p>
+                    </div>
                   </div>
-                  <div class="flex gap-x-2">
-                    <img src="./images/seat-green-filled.png" alt="">
-                    <p class="font-medium text-lg inter-font">Selected</p>
+                  <div class="dashed"></div>
+                  <div class="flex justify-between">
+                    <div></div>
+                    <div class="bg-[#edeeee] pl-7 pr-7 pt-2 pb-2 rounded-lg mb-2">
+                      <img src="./images/wheel.png" alt="">
+                    </div>
                   </div>
                 </div>
-                <div class="dashed"></div>
+                <div class="">
+                  <div class="flex gap-x-4 mb-7">
+                    <div class="p-3">A</div>
+                    <div><button class="btn pl-8 pr-8 A1">A1</button></div>
+                    <div><button class="btn pl-8 pr-8 A2">A2</button></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div><button class="btn pl-8 pr-8 A3">A3</button></div>
+                    <div><button class="btn pl-8 pr-8 A4">A4</button></div>
+                  </div>
+    
+                  <div class="flex gap-x-4 inter-font">
+                    <div class="p-3">B</div>
+                    <div><button class="btn pl-8 pr-8 B1">B1</button></div>
+                    <div><button class="btn pl-8 pr-8 B2">B2</button></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div><button class="btn pl-8 pr-8 B3">B3</button></div>
+                    <div><button class="btn pl-8 pr-8 B4">B4</button></div>
+                  </div>
+                </div>
               </div>
-              <div></div>
+              
+              
+
+              <div class="w-1/2">
+                <h3 class="Select-Your-Seat font-semibold text-2xl">Select Your Seat</h3>
+                <div class="bg-[#f7f8f8] flex justify-between">
+                  <p class="seat">Seat</p>
+                  <p class="seat-class">Class</p>
+                  <p class="Fare">Fare</p>
+                </div>
+              </div>
             </div>
         </section>
 
