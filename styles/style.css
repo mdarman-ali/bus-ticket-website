@@ -88,7 +88,12 @@ header{
 .btn-font{
     font-family: var(--font-raleway);
 }
-
+.raleway-font{
+    font-family: var(--font-raleway);
+}
+.inter-font{
+    font-family: var(--font-inter);
+}
 
 
 
@@ -548,6 +553,20 @@ header{
     font-weight: 600;
     color: rgba(3, 7, 18, 0.6);
 }
+.Select-Your-Seat{
+    font-family: var(--font-raleway);
+}
+.dashed{
+    align-self: stretch;
+    height: 2px;
+    position: relative;
+    border-top: 1px dashed rgba(3, 7, 18, 0.2);
+    box-sizing: border-box;
+    z-index: 3;
+}
+
+
+
 
 @media screen and (max-width: 450px) {
     .end-to-end-travel-with-container {
