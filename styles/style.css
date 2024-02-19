@@ -1,0 +1,633 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    margin: 0;
+    line-height: normal;
+}
+
+:root {
+    /* fonts */
+    --font-raleway: "Raleway", sans-serif;
+    --font-inter: "Inter", sans-serif;
+    --color-white: #fff;
+    --color-limegreen-100: #1dd100;
+    --color-limegreen-200: #03b800;
+    --color-limegreen-300: rgba(29, 209, 0, 0.15);
+    --color-lightcoral: #f78c9c;
+    --color-yellow: #FFBF0F;
+    --color-black: #030712;
+    --color-secondary-black:rgba(3, 7, 17, 0.4);
+}
+.P-Ticket{
+    font-weight: 800;
+    font-family: var(--font-raleway);
+}
+.btn-primary1{
+    cursor: pointer;
+    border: 1px solid rgba(29, 209, 0, 0.4);
+    padding: var(--padding-base) var(--padding-12xl) var(--padding-base) 29px;
+    background-color: rgba(29, 209, 0, 0.1);
+    border-radius: var(--br-xs);
+    display: flex;
+    font-size: var(--font-size-xl);
+    font-family: var(--font-raleway);
+    color: var(--color-limegreen-100);
+    text-align: center;
+    white-space: nowrap;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-start;
+    gap: 10px;
+
+}
+.btn-primary1:hover{
+    background : rgba(3, 184, 0, 0.1);
+    border: 1px solid rgba(3, 184, 0, 0.4);
+    box-sizing: border-box;
+}
+
+
+header{
+    padding: 0 100px;
+    transition: .5s;
+}
+
+
+.container{
+    background: linear-gradient(180deg,#070211 0%,#07021100 100%), url('../images/banner.png');
+    width: 100%;
+    margin: 0px auto;
+    height: 550px;
+    border-radius: 24px;
+    max-width: 1370px;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.banner-text{
+    text-align: center;
+    color: #fff;
+    font-family: 'Merriweather', serif;
+    padding: 0 250px;
+}
+
+.banner-heading{
+    font-size: 50px;
+    font-weight: 900;
+    margin: 0 auto;
+    line-height: 72px;
+    font-family: var(--font-raleway);
+}
+.btn-font{
+    font-family: var(--font-raleway);
+}
+
+
+
+
+/* Common header */
+.common{
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    justify-items: center;
+    text-align: center;
+    margin: 100px auto 60px auto;
+    max-width: 607px;
+    
+}
+
+.common h3{
+    grid-column: span 12;
+    font-family: var(--font-raleway);
+    color: var(--primary-color);
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 24px;
+}
+.common p{
+    grid-column: span 12;
+    margin-bottom: 24px;
+    font-size: var(--secondary-font-size);
+    color: var(--secondary-color);
+    margin-top: 0;
+}
+
+.offer-new-sixteen{
+    background: var(--color-yellow);
+}
+.offer-new-sixteen2{
+    background: var(--color-lightcoral);
+}
+.fifteen-off{
+    font-family: var(--font-inter);
+}
+.fifteen-off h3{
+    color:var(--color-black);
+    font-size: 40px;
+}
+.fifteen-off-p{
+    color: var(--color-black);
+}
+.fifteen-off-p2{
+    color:var(--color-secondary-black);
+}
+.new-fifteen{
+    font-family: var(--font-raleway);
+}
+.new-fifteen h3{
+    font-size: 32px;
+    color: var(--color-black);
+
+}
+.new-fifteen p{
+    color: var(--color-secondary-black);
+}
+
+
+.enter-name-frame,
+.name-entry-child {
+    border-radius: 24px;
+    background-color: #ffffff;
+    max-width: 100%;
+}
+.enter-name-frame {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 63px 0 32px;
+    box-sizing: border-box;
+    gap: 32px;
+    z-index: 1;
+}
+.enter-name-frame-child {
+    align-self: stretch;
+    width: 1170px;
+    position: relative;
+    border-radius: 24px;
+    background-color: #ffffff;
+    display: none;
+    max-width: 100%;
+}
+.btn-see-all-offer{
+    cursor: pointer;
+    border: 1px solid rgba(29, 209, 0, 0.4);
+    padding: 16px 31px 16px 29px;
+    font-weight: bold;
+    border-radius: 12px;
+    display: flex;
+    font-size: 20px;
+    font-family: var(--font-raleway);
+    color: var(--color-limegreen-100);
+    text-align: center;
+    white-space: nowrap;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-start;
+    gap: 10px;
+}
+.btn-see-all-offer:hover{
+    background-color: rgba(29, 209, 0, 0.1);
+}
+
+.ticket-section{
+    background: #f7f8f8;
+    border-radius: 50px;
+}
+
+
+.phone-number-group,
+.previous-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+.phone-number-group {
+    flex: 1;
+    align-items: flex-start;
+    padding: 20px 0;
+    gap: 24px;
+    min-width: 525px;
+}
+
+
+.rectangle-parent,
+.select-your-seat {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.select-your-seat {
+    align-self: stretch;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 100%;
+}
+
+.c-class-frame,
+.c-class-frames,
+.enter-coupon {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.c-class-frames {
+    width: 395px;
+    flex-direction: row;
+    align-items: center;
+    gap: 14px;
+    max-width: 100%;
+}
+.bus-logo-icon {
+    height: 48px;
+    width: 68.6px;
+    position: relative;
+    z-index: 2;
+}
+
+.c-class-frame {
+    flex: 1;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    min-width: 203px;
+}
+.greenline-paribahan {
+    margin: 0;
+    font-size: 32px;
+    font-weight: 700;
+    font-family: var(--font-raleway);
+}
+.coach-009-web-ac-business,
+.greenline-paribahan {
+    position: relative;
+    z-index: 2;
+}
+.enter-coupon {
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0 2px;
+    text-align: left;
+    font-size: 18px;
+    color: rgba(3, 7, 18, 0.6);
+    font-family: var(--font-inter);
+}
+
+.rectangle-parent {
+    cursor: pointer;
+    border: 0;
+    padding: 14px 13px 14px 17px;
+    background-color: var(--color-limegreen-300);
+    border-radius: 12px;
+    justify-content: flex-start;
+    gap: 8px;
+    white-space: nowrap;
+    z-index: 2;
+}
+.rectangle-parent:hover {
+    background-color: rgba(3, 184, 0, 0.15);
+}
+.frame-child {
+    height: 56px;
+    width: 180px;
+    position: relative;
+    border-radius: 12px;
+    background-color: var(--color-limegreen-300);
+    display: none;
+}
+
+.seat-green-icon {
+    height: 28px;
+    width: 28px;
+    position: relative;
+    z-index: 1;
+}
+.seats-left {
+    position: relative;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: var(--font-inter);
+    color: var(--color-limegreen-100);
+    text-align: left;
+    z-index: 1;
+}
+.previous-btn {
+    align-self: stretch;
+    border-radius: 24px;
+    background-color: #f7f8f8;
+    align-items: center;
+    padding: 32px 31px 33px 32px;
+    gap: 23px;
+    z-index: 2;
+    text-align: left;
+    font-size: 18px;
+    color: rgba(3, 7, 18, 0.6);
+}
+.previous-btn-child {
+    width: 808px;
+    height: 258px;
+    position: relative;
+    border-radius: 24px;
+    background-color: #f7f8f8;
+    display: none;
+    max-width: 100%;
+}
+
+.next-btn {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 0 1px 0 0;
+    gap: 20px;
+}
+
+.dhaka-sylhet,
+.route {
+    position: relative;
+    font-weight: 600;
+    z-index: 3;
+}
+.dhaka-sylhet {
+    color: var(--color-black);
+}
+.next-btn1 {
+    align-self: stretch;
+    height: 1px;
+    position: relative;
+    border-top: 1px dashed rgba(3, 7, 18, 0.2);
+    box-sizing: border-box;
+    z-index: 3;
+}
+.next-btn2 {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 0 1px 0 0;
+    gap: 20px;
+}
+.departure-time,
+.pm {
+    position: relative;
+    font-weight: 600;
+    z-index: 3;
+}
+.pm {
+    color: var(--color-black);
+    white-space: nowrap;
+}
+.next-btn3 {
+    align-self: stretch;
+    height: 1px;
+    position: relative;
+    border-top: 1px dashed rgba(3, 7, 18, 0.2);
+    box-sizing: border-box;
+    z-index: 3;
+}
+.frame-parent,
+.group-div {
+    display: flex;
+    flex-direction: row;
+}
+
+.frame-parent {
+    align-self: stretch;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0 1px 0 0;
+    gap: 24px;
+    z-index: 3;
+    font-size: 16px;
+    color: rgba(3, 7, 18, 0.8);
+    font-family: var(--font-inter);
+}
+
+.frame-inner,
+.rectangle-group {
+    border-radius: 12px;
+    background-color: rgba(3, 7, 18, 0.05);
+}
+.rectangle-group {
+    cursor: pointer;
+    border: 0;
+    padding: 19px 17px 18px 16px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+}
+.rectangle-container:hover,
+.rectangle-group:hover {
+    background-color: rgba(54, 59, 69, 0.05);
+}
+.frame-item {
+    height: 56px;
+    width: 232px;
+    position: relative;
+    border-radius: 12px;
+    background-color: rgba(3, 7, 18, 0.05);
+    display: none;
+}
+.dropping-point-,
+.boarding-point- {
+    position: relative;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: var(--font-inter);
+    color: rgba(3, 7, 18, 0.8);
+    text-align: left;
+    z-index: 1;
+}
+
+.rectangle-container,
+.rectangle-div {
+    border-radius: 12px;
+    background-color: rgba(3, 7, 18, 0.05);
+}
+.rectangle-container {
+    cursor: pointer;
+    border: 0;
+    padding: 19px 23px 18px 24px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+}
+
+.frame-inner {
+    height: 56px;
+    width: 232px;
+    position: relative;
+    display: none;
+}
+.group-div {
+    flex: 1;
+    border-radius: 12px;
+    background-color: rgba(3, 7, 18, 0.05);
+    align-items: center;
+    justify-content: center;
+    padding: 19px 18px 18px;
+    box-sizing: border-box;
+    min-width: 144px;
+    white-space: nowrap;
+}
+.rectangle-div {
+    height: 56px;
+    width: 232px;
+    position: relative;
+    display: none;
+}
+
+.est-time- {
+    position: relative;
+    font-weight: 500;
+    z-index: 1;
+}
+.all-offers-btn,
+.lacks-tickets {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.lacks-tickets {
+    flex-direction: row;
+    gap: 22px;
+}
+
+.fare-icon,
+.info-devider-icon {
+    height: 418.2px;
+    width: 80px;
+    position: relative;
+    z-index: 2;
+}
+.fare-icon {
+    width: 48px;
+    height: 48px;
+}
+
+.all-offers-btn {
+    flex-direction: column;
+    padding: 20px 0;
+    gap: 23px;
+}
+.taka-per-seat-container {
+    height: 83px;
+    position: relative;
+    line-height: 40px;
+    display: inline-block;
+    z-index: 2;
+    text-align: center;
+}
+.taka {
+    margin: 0;
+    font-size: 32px;
+    font-weight: bold;
+}
+.per-seat {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 600;
+    color: rgba(3, 7, 18, 0.6);
+}
+
+@media screen and (max-width: 450px) {
+    .end-to-end-travel-with-container {
+        font-size: 38px;
+        line-height: 52px;
+    }
+    .banner-heading{
+        font-size: 18px;
+        padding: 0;
+        font-weight: 500;
+        line-height: 24px;
+    }
+    .c-class-frames,
+    .next-btn,
+    .next-btn2 {
+        flex-wrap: wrap;
+    }
+    .greenline-paribahan {
+        font-size: 19px;
+    }
+    .taka-per-seat-container {
+        line-height: 32px;
+    }
+    .select-your-seat1,
+    .taka-per-seat-container {
+        font-size: 19px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+    .phone-number-group {
+        min-width: 100%;
+    }
+    .select-your-seat {
+        flex-wrap: wrap;
+    }
+}
+
+
+@media screen and (max-width:600px) {
+    .btn-primary1{
+        padding: 6px 15px;
+        font-size: 14px;
+    }
+    header{
+        padding: 0 20px;
+    }
+    .banner-heading{
+        font-size: 18px;
+        padding: 0;
+        font-weight: 500;
+        line-height: 24px;
+    }
+}
+
+@media screen and (min-width:600px) and (max-width:992px){
+
+    header{
+        padding: 0 80px;
+    }
+    .banner-heading{
+        font-size: 18px;
+        padding: 0;
+        font-weight: 500;
+        line-height: 24px;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .end-to-end-travel-with-container {
+      font-size: 51px;
+      line-height: 69px;
+    }
+    .greenline-paribahan {
+        font-size: 26px;
+    }
+    .frame-parent {
+        flex-wrap: wrap;
+    }
+}
+
+
+
