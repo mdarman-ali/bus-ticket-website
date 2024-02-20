@@ -565,7 +565,7 @@ header{
     box-sizing: border-box;
     z-index: 3;
 }
-.total-seat{
+#total-seat{
     border-radius: 50%;
     background: #1dd100;
     padding: 2px 5px 2px 5px;

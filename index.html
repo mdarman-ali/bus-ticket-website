@@ -6,7 +6,6 @@
     <title>P Paribahan</title>
     <!-- CSS File link -->
     <link rel="stylesheet" href="./styles/style.css">
-    <link rel="stylesheet" href="./styles/global.css">
 
     <!-- custom color -->
     <script>
@@ -155,7 +154,7 @@
                               src="./images/seat-green.png"
                             />
         
-                            <div class="seats-left"><span class="seats-left-count">0</span> Seats left</div>
+                            <div class="seats-left"><span class="seats-left-count" id="Available-seat">8</span> Seats left</div>
                           </button>
                         </div>
                         <div class="previous-btn bg-[#f7f8f8] m-7">
@@ -244,18 +243,18 @@
                 <div class="">
                   <div class="flex gap-x-4 mb-7 justify-between">
                     <div class="p-3">A</div>
-                    <div><button class="btn pl-8 pr-8 A1">A1</button></div>
-                    <div><button class="btn pl-8 pr-8 A2">A2</button></div>
-                    <div><button class="btn pl-8 pr-8 A3">A3</button></div>
-                    <div><button class="btn pl-8 pr-8 A4">A4</button></div>
+                    <div><button class="btn add-btn pl-8 pr-8 A1">A1</button></div>
+                    <div><button class="btn add-btn pl-8 pr-8 A2">A2</button></div>
+                    <div><button class="btn add-btn pl-8 pr-8 A3">A3</button></div>
+                    <div><button class="btn add-btn pl-8 pr-8 A4">A4</button></div>
                   </div>
     
                   <div class="flex gap-x-4 inter-font justify-between">
                     <div class="p-3">B</div>
-                    <div><button class="btn pl-8 pr-8 B1">B1</button></div>
-                    <div><button class="btn pl-8 pr-8 B2">B2</button></div>
-                    <div><button class="btn pl-8 pr-8 B3">B3</button></div>
-                    <div><button class="btn pl-8 pr-8 B4">B4</button></div>
+                    <div><button class="btn add-btn pl-8 pr-8 B1">B1</button></div>
+                    <div><button class="btn add-btn pl-8 pr-8 B2">B2</button></div>
+                    <div><button class="btn add-btn pl-8 pr-8 B3">B3</button></div>
+                    <div><button class="btn add-btn pl-8 pr-8 B4">B4</button></div>
                   </div>
                 </div>
               </div>
@@ -264,17 +263,23 @@
 
               <div class="w-1/2">
                 <h3 class="Select-Your-Seat font-semibold text-2xl">Select Your Seat</h3>
-                <div class="bg-[#f7f8f8] flex justify-between mt-4 mb-4 p-8 rounded-xl">
-                  <p class="seat inter-font">Seat <span class="total-seat">0</span></p>
-                  <p class="seat-class inter-font">Class</p>
-                  <p class="Fare inter-font">Fare</p>
+                <div class="bg-[#f7f8f8] mt-4 mb-4 p-8 rounded-xl" id="ticket-details">
+                  <div class="flex justify-between">
+                    <p class="seat inter-font">Seat <span id="total-seat">0</span></p>
+                    <p class="seat-class inter-font">Class</p>
+                    <p class="Fare inter-font">Fare</p>
+                  </div>
+                  <div class="flex justify-between" id="add-text">
+                    
+                  </div>
+                  
                 </div>
                 <div class="flex justify-between">
                   <div>
                     <h3 class="inter-font font-medium text-base">Total Price</h3>
                   </div>
                   <div>
-                    <h3 class="inter-font font-medium text-base">BDT <span class="total-price">0</span></h3>
+                    <h3 class="inter-font font-medium text-base">BDT <span id="total-price">0</span></h3>
                   </div>
                 </div>
                 <div class="mt-4 mb-4">
@@ -293,6 +298,10 @@
                   </div>
                 </div>
                 <button class="btn bg-[#1dd100] mt-4 mb-4 font-medium w-full text-white inter-font">Next</button>
+
+                <div>
+
+                </div>
               </div>
             </div>
         </section>
@@ -334,5 +343,11 @@
       </section>
   </footer>
 
+
+
+
+
+  <script src="js/index.js"></script>
+  <script src="js/utility.js"></script>
 </body>
 </html>
