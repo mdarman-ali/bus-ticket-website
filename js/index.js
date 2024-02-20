@@ -8,7 +8,7 @@ for (const totalbtn of allBtn ){
         totalbtn.classList.add('bg-[#1dd100]');
         count = count + 1;
         setInnerText("total-seat",count);
-        ticketPrice = ticketPrice + 550;
+        ticketPrice = ticketPrice + parseInt(550);
         setInnerText("total-price",ticketPrice);
         availableseat = availableseat - 1;
 
@@ -23,26 +23,15 @@ for (const totalbtn of allBtn ){
         const p2 = document.createElement('p');
         const p3 = document.createElement('p');
         p.innerText = TicketNumber;
-        p2.innerText = 'Economy';
+        p2.innerText = 'economy';
         p3.innerText = '550';
         div.appendChild(p);
         div.appendChild(p2);
         div.appendChild(p3);
         divContainer.appendChild(div);
-        if(count === 4){
-            alert('You dont click');
-        }
 
-        // const addtext = document.getElementById('add-text');
-        // const p = document.createElement('p');
-        // const p2 = document.createElement('p2');
-        // const p3 = document.createElement('p3');
-        // p.innerText = TicketNumber;
-        // p2.innerText = 'seat ase';
-        // p3.innerText = 'seat ase';
-        // addtext.appendChild(p);
-        // addtext.appendChild(p2);
-        // addtext.appendChild(p3);
+        grandTotal("Grand-total",parseInt(550));
+
         
     });
 }
