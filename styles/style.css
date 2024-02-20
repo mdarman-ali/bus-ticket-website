@@ -557,6 +557,7 @@ header{
     font-family: var(--font-raleway);
 }
 .dashed{
+    margin: 15px 0 15px 0;
     align-self: stretch;
     height: 2px;
     position: relative;
@@ -564,6 +565,50 @@ header{
     box-sizing: border-box;
     z-index: 3;
 }
+.total-seat{
+    border-radius: 50%;
+    background: #1dd100;
+    padding: 2px 5px 2px 5px;
+    font-family: var(--font-inter);
+}
+input:focus {
+    outline:none;
+}
+
+.footer-section-content{
+    margin-top: 100px;
+    padding: 80px 80px;
+    font-size: 24px;
+    font-weight: 500;
+}
+.footer-section{
+    width: 100%;
+    height: 450px;
+    align-items: center;
+    justify-content: center;
+    background-color: #070211;
+    margin-bottom: 0;
+    color: #fff;
+    
+}
+.address, .contact{
+    line-height: 40px;
+}
+.location{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 50px;
+}
+
+
+.copyright{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+}
+
+
+
 
 
 
