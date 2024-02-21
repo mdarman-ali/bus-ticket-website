@@ -6,11 +6,18 @@ let availableseat = 8;
 for (const totalbtn of allBtn ){
     totalbtn.addEventListener("click", function (e){
         totalbtn.classList.add('bg-[#1dd100]');
+        
+        
         count = count + 1;
         setInnerText("total-seat",count);
-        ticketPrice = ticketPrice + parseInt(550);
+        if(count>4 || availableseat == 4){
+            alert("No more than four tickets can be purchared at the time");
+            return;
+        }
+        
+        ticketPrice = parseInt(ticketPrice) + parseInt(550);
         setInnerText("total-price",ticketPrice);
-        availableseat = availableseat - 1;
+        availableseat = parseInt(availableseat) - 1;
 
 
         const TicketNumber = e.target.parentNode.childNodes[0].innerText;
@@ -36,6 +43,37 @@ for (const totalbtn of allBtn ){
     });
 }
 
+// const couponNewFifteen = document.getElementById("new-15").innerText;
+const applyButton = document.getElementById("apply-button");
+applyButton.addEventListener("click",function(){
+    
+    
+    
+    const couponElement = document.getElementById("coupon-code").value;
+    const couponCode = couponElement.split(" ").join("").toUpperCase();
+    
+    if(couponCode === "NEW15"){
+        const discountPrice = ticketPrice * 0.15;
+        const grandTotalNewValue = ticketPrice - discountPrice;
+        setInnerText("Grand-total",grandTotalNewValue);
+        const hideGrandTotal = document.getElementsByClassName("grand-total-hide");
+        hideElementById(hideGrandTotal);
+        
+        
+
+    }
+    
+    else if(couponCode === "COUPLE20"){
+        const discountPrice = ticketPrice * 0.2;
+        const grandTotalNewValue = ticketPrice - discountPrice;
+        setInnerText("Grand-total",grandTotalNewValue);
+    }
+    else{
+        alert("Invalid Coupon Code");
+    }
+});
+
+
 
 
 // function continueSellTicket(){
@@ -44,7 +82,8 @@ for (const totalbtn of allBtn ){
 
 
 // function play(){
-//     opacityElementById('ticket-interface-section');
-//     showElementById('modal-section');
-//     continueSellTicket();
+//     hideElementById('')
+//     // opacityElementById('ticket-interface-section');
+//     // showElementById('modal-section');
+//     // continueSellTicket();
 // }

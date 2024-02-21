@@ -21,3 +21,7 @@ function grandTotal(id,value){
 //     const element = document.getElementById(elementId);
 //     element.ClassList.remove('hidden');
 // }
+function hideElementById(elementId){
+    const element = document.getElementById(elementId);
+    element.ClassList.add('hidden');
+}
