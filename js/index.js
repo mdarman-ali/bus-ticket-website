@@ -55,13 +55,13 @@ applyButton.addEventListener("click",function(){
     
     const couponElement = document.getElementById("coupon-code").value;
     const couponCode = couponElement.split(" ").join("").toUpperCase();
-    document.getElementById('apply-button').style.display = 'none';
-    if(couponCode === "NEW15"){
+    
+    
+    if(couponCode === "NEW15" && count === 4){
         const discountPrice = ticketPrice * 0.15;
         const grandTotalNewValue = ticketPrice - discountPrice;
         setInnerText("Grand-total",grandTotalNewValue);
-        const hideGrandTotal = document.getElementsByClassName("grand-total-hide");
-        hideElementById(hideGrandTotal);
+        document.getElementById('apply-button').style.display = 'none';
         return;
         
         
@@ -74,7 +74,7 @@ applyButton.addEventListener("click",function(){
         setInnerText("Grand-total",grandTotalNewValue);
     }
     else{
-        alert("Invalid Coupon Code");
+        alert("Invalid Coupon Code OR you didn't buy four ticket");
     }
     
 });

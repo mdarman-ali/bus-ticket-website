@@ -17,11 +17,11 @@ function grandTotal(id,value){
 //     const element = document.getElementById(elementId);
 //     element.ClassList.add('opacity-25');
 // }
-// function showElementById(elementId){
-//     const element = document.getElementById(elementId);
-//     element.ClassList.remove('hidden');
-// }
-function hideElementById(elementId){
+function showElementById(elementId){
     const element = document.getElementById(elementId);
-    element.ClassList.add('hidden');
+    element.ClassList.remove('hidden');
 }
+// function hideElementById(elementId){
+//     const element = document.getElementById(elementId);
+//     element.ClassList.add('hidden');
+// }
