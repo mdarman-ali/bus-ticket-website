@@ -297,10 +297,24 @@
                     <h3 class="inter-font font-medium text-base">BDT <span id="Grand-total">0</span></h3>
                   </div>
                 </div>
-                <button class="btn bg-[#1dd100] mt-4 mb-4 font-medium w-full text-white inter-font">Next</button>
+                
 
                 <div>
-
+                  <!-- <button class="btn bg-[#1dd100] mt-4 mb-4 font-medium w-full text-white inter-font">Next</button> -->
+                  <!-- You can open the modal using ID.showModal() method -->
+                  <button class="btn bg-[#1dd100] mt-4 mb-4 font-medium w-full text-white inter-font text-xl" onclick="my_modal_4.showModal()">Next</button>
+                  <dialog id="my_modal_4" class="modal">
+                    <div class="modal-box w-11/12 max-w-5xl">
+                      <h3 class="font-bold text-lg">Hello!</h3>
+                      <p class="py-4">Click the button below to close</p>
+                      <div class="modal-action">
+                        <form method="dialog">
+                          <!-- if there is a button, it will close the modal -->
+                          <button class="btn">Close</button>
+                        </form>
+                      </div>
+                    </div>
+                  </dialog>
                 </div>
               </div>
             </div>

@@ -15,6 +15,10 @@ for (const totalbtn of allBtn ){
             return;
         }
         
+            
+            
+        
+        
         ticketPrice = parseInt(ticketPrice) + parseInt(550);
         setInnerText("total-price",ticketPrice);
         availableseat = parseInt(availableseat) - 1;
@@ -51,13 +55,14 @@ applyButton.addEventListener("click",function(){
     
     const couponElement = document.getElementById("coupon-code").value;
     const couponCode = couponElement.split(" ").join("").toUpperCase();
-    
+    document.getElementById('apply-button').style.display = 'none';
     if(couponCode === "NEW15"){
         const discountPrice = ticketPrice * 0.15;
         const grandTotalNewValue = ticketPrice - discountPrice;
         setInnerText("Grand-total",grandTotalNewValue);
         const hideGrandTotal = document.getElementsByClassName("grand-total-hide");
         hideElementById(hideGrandTotal);
+        return;
         
         
 
@@ -71,6 +76,7 @@ applyButton.addEventListener("click",function(){
     else{
         alert("Invalid Coupon Code");
     }
+    
 });
 
 
