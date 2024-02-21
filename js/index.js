@@ -8,9 +8,10 @@ for (const totalbtn of allBtn ){
         totalbtn.classList.add('bg-[#1dd100]');
         
         
+        
         count = count + 1;
         setInnerText("total-seat",count);
-        if(count>4 || availableseat == 4){
+        if(count>4){
             alert("No more than four tickets can be purchared at the time");
             return;
         }
@@ -18,10 +19,10 @@ for (const totalbtn of allBtn ){
             
             
         
-        
         ticketPrice = parseInt(ticketPrice) + parseInt(550);
         setInnerText("total-price",ticketPrice);
-        availableseat = parseInt(availableseat) - 1;
+        availableseat = parseInt(availableseat) - parseInt(1);
+        
 
 
         const TicketNumber = e.target.parentNode.childNodes[0].innerText;
@@ -72,6 +73,8 @@ applyButton.addEventListener("click",function(){
         const discountPrice = ticketPrice * 0.2;
         const grandTotalNewValue = ticketPrice - discountPrice;
         setInnerText("Grand-total",grandTotalNewValue);
+        document.getElementById('apply-button').style.display = 'none';
+        return;
     }
     else{
         alert("Invalid Coupon Code OR you didn't buy four ticket");
