@@ -63,6 +63,7 @@ applyButton.addEventListener("click",function(){
         const grandTotalNewValue = ticketPrice - discountPrice;
         setInnerText("Grand-total",grandTotalNewValue);
         document.getElementById('apply-button').style.display = 'none';
+        document.getElementById('coupon-code').style.display = 'none';
         return;
         
         
@@ -74,6 +75,7 @@ applyButton.addEventListener("click",function(){
         const grandTotalNewValue = ticketPrice - discountPrice;
         setInnerText("Grand-total",grandTotalNewValue);
         document.getElementById('apply-button').style.display = 'none';
+        document.getElementById('coupon-code').style.display = 'none';
         return;
     }
     else{
