@@ -1,4 +1,5 @@
 const allBtn = document.getElementsByClassName("add-btn");
+const btnRemoveHide = document.getElementById("remove-btn-disabled");
 let count = 0;
 let ticketPrice = 0;
 let availableseat = 8;
@@ -41,6 +42,7 @@ for (const totalbtn of allBtn ){
         div.appendChild(p2);
         div.appendChild(p3);
         divContainer.appendChild(div);
+        
 
         grandTotal("Grand-total",parseInt(550));
 
@@ -48,7 +50,7 @@ for (const totalbtn of allBtn ){
     });
 }
 
-// const couponNewFifteen = document.getElementById("new-15").innerText;
+
 const applyButton = document.getElementById("apply-button");
 applyButton.addEventListener("click",function(){
     
@@ -56,7 +58,7 @@ applyButton.addEventListener("click",function(){
     
     const couponElement = document.getElementById("coupon-code").value;
     const couponCode = couponElement.split(" ").join("").toUpperCase();
-    
+     
     
     if(couponCode === "NEW15" && count === 4){
         const discountPrice = ticketPrice * 0.15;
@@ -64,6 +66,7 @@ applyButton.addEventListener("click",function(){
         setInnerText("Grand-total",grandTotalNewValue);
         document.getElementById('apply-button').style.display = 'none';
         document.getElementById('coupon-code').style.display = 'none';
+        btnRemoveHide.classList.remove('btn-disabled');
         return;
         
         
@@ -76,6 +79,7 @@ applyButton.addEventListener("click",function(){
         setInnerText("Grand-total",grandTotalNewValue);
         document.getElementById('apply-button').style.display = 'none';
         document.getElementById('coupon-code').style.display = 'none';
+        btnRemoveHide.classList.remove('btn-disabled');
         return;
     }
     else{
@@ -84,17 +88,3 @@ applyButton.addEventListener("click",function(){
     
 });
 
-
-
-
-// function continueSellTicket(){
-
-// }
-
-
-// function play(){
-//     hideElementById('')
-//     // opacityElementById('ticket-interface-section');
-//     // showElementById('modal-section');
-//     // continueSellTicket();
-// }
